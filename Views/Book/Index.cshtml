@@ -1,0 +1,36 @@
+@model IEnumerable<LibraryMVCApp.Models.Book>
+@{
+    ViewData["Title"] = "List of Books";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h1>Book List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Author</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.Genre</td>
+                <td>@book.Author</td>
+                <td>@Html.ActionLink("Delete","Delete","Book", new { id=book.Id })</td>
+                <td>@Html.ActionLink("Edit","EditBook","Book", new { id=book.Id })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.ActionLink("Add Book","AddBook","Book")
