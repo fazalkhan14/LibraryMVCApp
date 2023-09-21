@@ -5,32 +5,41 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<h1>Book List</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Genre</th>
-            <th>Author</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var book in Model)
-        {
+@{
+    if (Model.Count() > 0)
+    {
+        <table class="table">
+        <thead>
             <tr>
-                <td>@book.Id</td>
-                <td>@book.Title</td>
-                <td>@book.Genre</td>
-                <td>@book.Author</td>
-                <td>@Html.ActionLink("Delete","Delete","Book", new { id=book.Id })</td>
-                <td>@Html.ActionLink("Edit","EditBook","Book", new { id=book.Id })</td>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Author</th>
+                <th></th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    <td>@book.Title</td>
+                    <td>@book.Genre</td>
+                    <td>@book.Author</td>
+                    <td>@Html.ActionLink("Delete","Delete","Book", new { id=book.Id })</td>
+                    <td>@Html.ActionLink("Edit","EditBook","Book", new { id=book.Id })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    }
+    else
+    {
+        <h3>No Books Available</h3>
+    }
+}
+
+
 
 @Html.ActionLink("Add Book","AddBook","Book")

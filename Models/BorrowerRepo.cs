@@ -22,7 +22,7 @@ namespace LibraryMVCApp.Models
 
         public async Task<List<Borrower>> GetAll()
         {
-            return await _context.Borrowers.ToListAsync();
+            return await _context.Borrowers.Include(bo => bo.books).ToListAsync();
         }
 
         public bool Add(Borrower borrower)

@@ -8,7 +8,6 @@ namespace LibraryMVCApp.Models
     public class Borrower
     {
         public int Id { get; set; }
-        public int MyProperty { get; set; }
         public DateTime BorrowedOn { get; set; }
         public DateTime ReturnedOn { get; set; }
         public DateTime ReturnDate { get; set; }

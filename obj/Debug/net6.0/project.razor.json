@@ -16303,6 +16303,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Borrower\\Index.cshtml",
+      "TargetPath": "Views\\Borrower\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Student\\Index.cshtml",
+      "TargetPath": "Views\\Student\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Student\\Edit.cshtml",
+      "TargetPath": "Views\\Student\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Book\\Create.cshtml",
       "TargetPath": "Views\\Book\\Create.cshtml",
       "FileKind": "mvc"
@@ -16330,6 +16345,11 @@
     {
       "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mkhan101\\LibraryMVCApp\\Views\\Student\\Create.cshtml",
+      "TargetPath": "Views\\Student\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

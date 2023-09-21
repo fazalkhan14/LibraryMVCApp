@@ -22,7 +22,6 @@ namespace LibraryMVCApp.Controllers
         [Route("AddBook")]
         public IActionResult Create()
         {
-            Console.Write("hi");
             return View();
         }
 
